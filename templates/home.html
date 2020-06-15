@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <link rel = "stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+  <body>
+    <header>
+      <div class="container1">
+        <h1 class="title">Super Geocoder Webservice</h1>
+        <h2 class="logo">Please upload a .csv file with an address column and we will figure out your latitute and logiture for you!!</h2>
+      </div>
+      </header>
+      <div class = "form-group">
+        <form action="{{url_for('success')}}" method="post" enctype="multipart/form-data">
+        <label for="upload">Upload File</label>
+          <input type="file"  accept =".csv" name="filename" required/>
+          <button><input type="submit" /></button>
+        </form>
+        <div class="container2">
+        <table id=table1 class="table">
+        {{text | safe}}
+        {% include [btn] ignore missing %}
+      </div>
+        </table>
+      </div>
+  </body>
+</html>

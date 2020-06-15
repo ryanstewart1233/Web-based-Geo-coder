@@ -1,0 +1,28 @@
+body {
+    background-color: rgba(17, 66, 42, 0.71);
+}
+
+.container1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.container > h2 {
+  font-style: italic;
+
+}
+
+.form-group {
+  text-align: center;
+  align-items: center;
+  table-layout: auto;
+
+}
+.container2 > table {
+  margin-top: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
